@@ -16,6 +16,40 @@ prompts/     few-shot exemplar prompts used by the ICL runs
 misc/        plotting
 ```
 
+## Environment Setup
+
+### Prerequisites
+
+- Python 3.12
+- CUDA-compatible GPU (recommended; inference uses vLLM, training uses PyTorch)
+
+### Installation
+
+Create a virtual environment:
+
+```bash
+# Using venv
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Or using conda
+conda create -n scotrg python=3.12
+conda activate scotrg
+```
+
+Install dependencies. `torch` in `requirements.txt` is the CUDA 12.4 build from conda env `peter2`, so install it from the PyTorch wheel index first:
+
+```bash
+pip install torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+pip install -r requirements.txt
+
+# Or using uv (faster, if available)
+uv pip install torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+uv pip install -r requirements.txt
+```
+
+BLEURT is optional and only needed for the official EntailmentBank intermediate scorer (`--bleurt-checkpoint`). The default evaluator is lexical and does not require it.
+
 ## Datasets
 
 Every file is a single JSON object with `train` and `test` keys.
