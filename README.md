@@ -16,6 +16,28 @@ prompts/     few-shot exemplar prompts used by the ICL runs
 misc/        plotting
 ```
 
+---
+
+## Table of Contents
+
+1. [Extended Version of the Paper](#extended-version-of-the-paper)
+2. [Environment Setup](#environment-setup)
+3. [Datasets](#datasets)
+4. [Training](#training)
+5. [Inference](#inference)
+6. [Faithfulness](#faithfulness)
+7. [Data preparation](#data-preparation)
+8. [Misc](#misc)
+9. [Citation](#citation)
+10. [Contact](#contact)
+
+---
+
+## Extended Version of the Paper
+
+The extended version of the paper, including appendices, is available on **arXiv**:
+[Structural Chain-of-Thought: Reasoning with Executable Computational Graphs](https://arxiv.org/abs/2610.15107)
+
 ## Environment Setup
 
 ### Prerequisites
@@ -196,3 +218,30 @@ scripts need `OPENROUTER_API_KEY` and their output is not bit-reproducible.
 ## Misc
 
 `misc/tokens_vs_acc_plot.py` — accuracy against generated-token budget.
+
+---
+
+## Citation
+
+If you use this work in your research, please cite the following paper:
+
+```bibtex
+@misc{senatorov2026structuralchainofthoughtreasoningexecutable,
+      title={Structural Chain-of-Thought: Reasoning with Executable Computational Graphs},
+      author={Petr Senatorov and Karim Vafin and Elena Tutubalina and Oleg Somov},
+      year={2026},
+      eprint={2610.15107},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.15107},
+}
+```
+
+---
+
+## Contact
+
+For questions, feedback, or collaboration opportunities, feel free to reach out:
+
+- **Telegram:** [@PETEPEtrek](https://t.me/PETEPEtrek)
+- **Email:** [senatorov.pp@phystech.edu](mailto:senatorov.pp@phystech.edu)
